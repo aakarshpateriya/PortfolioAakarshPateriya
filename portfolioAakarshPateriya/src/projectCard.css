@@ -1,0 +1,59 @@
+/* projectCard.css */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    gap: 30px;
+    padding: 20px;
+    background-color: #000000;
+    justify-content: center;
+}
+
+.project-card {
+    background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px #000000, -4px -4px 8px #2a2a2a;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 12px #000000, -6px -6px 12px #2a2a2a;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-tech {
+    font-size: 0.9rem;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #00a6ff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #66ccff;
+}

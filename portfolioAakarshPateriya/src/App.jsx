@@ -6,6 +6,11 @@ import Navbar from './navbar.jsx'
 // importing navbar css file
 import './navbar.css'
 import Intro from './Intro.jsx'
+import SocialLink from './socialLink.jsx'
+
+import Projects from './projectCard.jsx'
+
+
 
 
 function App() {
@@ -15,6 +20,8 @@ function App() {
     <> 
     <Navbar/>
     <Intro/>
+   <Projects/>
+  
     </>
   )
 }
