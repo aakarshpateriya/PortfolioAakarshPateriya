@@ -9,6 +9,8 @@ import Intro from './Intro.jsx'
 import SocialLink from './socialLink.jsx'
 
 import Projects from './projectCard.jsx'
+import Footer from './footer.jsx'
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
     <Navbar/>
     <Intro/>
    <Projects/>
+   <Footer/>
   
     </>
   )
