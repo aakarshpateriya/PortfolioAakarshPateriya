@@ -1,5 +1,6 @@
 import React from "react";
 import './intro.css';
+
 function Navbar(){
 
     return(
@@ -7,10 +8,12 @@ function Navbar(){
         
         <div class="nav">
   <div class="container">
+
     <div class="btn">Home</div>
-    <div class="btn">Contact</div>
+    <div class="btn">CV</div>
     <div class="btn">About</div>
     <div class="btn">FAQ</div>
+
     <svg
       class="outline"
       overflow="visible"

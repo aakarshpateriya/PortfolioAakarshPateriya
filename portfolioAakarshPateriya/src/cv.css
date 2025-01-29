@@ -1,0 +1,107 @@
+/* General Styles */
+.cv-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 80px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Section */
+.cv-header {
+    text-align: center;
+    background: #0073e6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cv-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cv-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.cv-contact {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cv-contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cv-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.cv-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section-title {
+    font-size: 20px;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cv-section-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cv-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cv-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cv-list li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons */
+.cv-button {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cv-button:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 15px;
+    background: #0073e6;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}

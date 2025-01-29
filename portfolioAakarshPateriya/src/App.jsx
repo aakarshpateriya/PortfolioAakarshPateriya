@@ -10,6 +10,7 @@ import SocialLink from './socialLink.jsx'
 
 import Projects from './projectCard.jsx'
 import Footer from './footer.jsx'
+import Cv from './cv.jsx'
 
 
 
@@ -20,11 +21,18 @@ function App() {
 
   return (
     <> 
+
+    
     <Navbar/>
     <Intro/>
    <Projects/>
+
+   <Cv/>
+
    <Footer/>
   
+   
+
     </>
   )
 }
