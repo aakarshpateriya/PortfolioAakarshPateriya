@@ -15,10 +15,10 @@ const ProjectCard = ({ title, description, techStack, link }) => {
 const Projects = () => {
     const projectData = [
         {
-            title: 'Learning Path Dashboard',
+            title: 'Learning System Backend',
             description: 'A dashboard for students to enhance their learning with tailored paths.',
             techStack: 'React, Node.js, MongoDB',
-            link: 'https://example.com',
+            link: 'hhttps://github.com/aakarshpateriya/mearnlearn3',
         },
         {
             title: 'Noise Pollution OTP Generator',
