@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './projectCard.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectCard = ({ title, description, techStack, link }) => {
     return (
-        <div className="project-card">
+        <div className="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" data-aos-once="false">
             <h2 className="project-title">{title}</h2>
             <p className="project-description">{description}</p>
             <p className="project-tech">Tech Stack: {techStack}</p>
@@ -13,6 +15,15 @@ const ProjectCard = ({ title, description, techStack, link }) => {
 };
 
 const Projects = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: false
+        });
+    }, []);
+
     const projectData = [
         {
             title: 'Learning System Backend',

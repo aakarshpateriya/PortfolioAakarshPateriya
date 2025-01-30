@@ -48,17 +48,17 @@ function Cv() {
                     <li data-aos="zoom-in">
                         <strong>Nations Education and Sports Application</strong> (Aug 2022 - Oct 2022)
                         <p>Developed an app for NFC to manage registrations and events. Built with React for front-end and Node.js for backend, allowing real-time data updates.</p>
-                        <a href="https://github.com/aakarshpateriya/NFC-App" className="cv-button" target="_blank">View Project</a>
+                        <a href="https://nfcsportsandeducations.netlify.app/" className="cv-button" target="_blank">View Project</a>
                     </li>
                     <li data-aos="zoom-in">
                         <strong>Noise Pollution-Based Random Code Generator</strong> (Feb 2023 - April 2023)
                         <p>Created an OTP generator using noise pollution data for unique authentication codes.</p>
-                        <a href="https://github.com/aakarshpateriya/NoisePollutionOTP" className="cv-button" target="_blank">View Project</a>
+                        <a href="https://github.com/aakarshpateriya/Random-code-Generator" className="cv-button" target="_blank">View Project</a>
                     </li>
                     <li data-aos="zoom-in">
                         <strong>NSC Quiz Platform</strong> (March 2024 - April 2024)
                         <p>Developed an interactive quiz platform with real-time score tracking using React.js.</p>
-                        <a href="https://github.com/aakarshpateriya/NSC-Quiz" className="cv-button" target="_blank">View Project</a>
+                        <a href="https://github.com/aakarshpateriya/NFCEducationOnReactjs" className="cv-button" target="_blank">View Project</a>
                     </li>
                 </ul>
             </section>
