@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Intro.css';
+import './intro.css';
 import SocialLink from "./socialLink";
 
 function Intro(){
