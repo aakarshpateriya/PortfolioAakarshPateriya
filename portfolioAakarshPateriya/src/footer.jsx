@@ -43,15 +43,15 @@ const Footer = () => {
                     <ul className="footer-contact">
                         <li>
                             <i className="fas fa-map-marker-alt"></i>
-                            <span>Your City, Country</span>
+                            <span>Chhttarpur, India</span>
                         </li>
                         <li>
                             <i className="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+                            <span>aakarshpateriya123@gmail.com</span>
                         </li>
                         <li>
                             <i className="fas fa-phone"></i>
-                            <span>+91 XXXXXXXXXX</span>
+                            <span>+91 9993748220</span>
                         </li>
                     </ul>
                 </div>

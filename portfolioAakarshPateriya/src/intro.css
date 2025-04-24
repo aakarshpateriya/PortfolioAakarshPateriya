@@ -353,8 +353,14 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     aspect-ratio: 1/1;
     width: 100%;
-    max-width: 350px;
+    max-width: 500px;
     margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .image-wrapper {
+        max-width: 550px;
+    }
 }
 
 .image-wrapper img {

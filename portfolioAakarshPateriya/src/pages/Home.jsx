@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Intro from '../Intro.jsx';
+import PlatformOverview from '../PlatformOverview.jsx';
 import Projects from '../projectCard.jsx';
+import SocialLink from '../socialLink.jsx';
 import '../App.css';
 
 const Home = () => {
@@ -18,9 +20,11 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="home-page">
             <Intro />
+            <PlatformOverview />
             <Projects />
+            <SocialLink />
             
             {/* CV Download Button */}
             <div className="cv-download-container" style={{ textAlign: 'center', margin: '2rem 0' }}>
