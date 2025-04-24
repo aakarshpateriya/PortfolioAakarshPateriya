@@ -1,27 +1,28 @@
 import React from 'react';
 import './certifications.css';
 
+
 const Certifications = () => {
   const certifications = [
     {
       title: "Full Stack Web Development",
       issuer: "Coding Ninjas",
       date: "2023",
-      image: "/certifications/fullstack.png",
+      image: "https://res.cloudinary.com/dnlck4inx/image/upload/v1745524683/Screenshot_2025-02-20_225133_kssedj.png",
       link: "#"
     },
     {
       title: "React.js Certification",
       issuer: "Udemy",
       date: "2023",
-      image: "/certifications/react.png",
+      image: require("/Screenshot 2025-02-20 224819.png"),
       link: "#"
     },
     {
       title: "Node.js Certification",
       issuer: "Coursera",
       date: "2023",
-      image: "/certifications/nodejs.png",
+      image: "/Screenshot 2025-02-20 225133.png",
       link: "#"
     }
   ];
@@ -49,5 +50,4 @@ const Certifications = () => {
     </section>
   );
 };
-
-export default Certifications; 
+export default Certifications;

@@ -99,9 +99,9 @@ function App() {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Contact Information</h3>
-          <p>Email: your.email@example.com</p>
-          <p>Phone: +91 XXXXXXXXXX</p>
-          <p>Location: Your City, Country</p>
+          <p>Email: aakarshpateriya123@gmail.com</p>
+          <p>Phone: +91 9993748220</p>
+          <p>Location: Chhattarpur, India</p>
         </div>
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required />

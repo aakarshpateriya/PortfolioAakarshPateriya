@@ -87,7 +87,7 @@ const PlatformOverview = () => {
                             </div>
                         </div>
                         <a 
-                            href="https://github.com/yourusername" 
+                            href="https://github.com/aakarshpateriya" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="platform-link"
@@ -117,7 +117,7 @@ const PlatformOverview = () => {
                             </div>
                         </div>
                         <a 
-                            href="https://leetcode.com/yourusername" 
+                            href="https://leetcode.com/u/aakarshpateriya/" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="platform-link"
