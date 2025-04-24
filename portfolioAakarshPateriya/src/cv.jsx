@@ -1,100 +1,120 @@
-import React, { useEffect } from 'react';
-import './cv.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useState } from 'react'
+import './App.css'
+import Navbar from './navbar.jsx'
+import './navbar.css'
+import Intro from './Intro.jsx'
+import SocialLink from './socialLink.jsx'
+import Projects from './projectCard.jsx'
+import Footer from './footer.jsx'
+import Certifications from './certifications.jsx'
 
-function Cv() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true
-        });
-    }, []);
+function App() {
+  const [count, setCount] = useState(0)
 
-    const handleDownloadCV = () => {
-        window.open('/Aakarsh_Pateriya_Resume.pdf', '_blank');
-    };
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    // Path to your CV file in the public directory
+    const cvUrl = '/Aakarsh_Pateriya_CV.pdf';
+    
+    // Create an anchor element
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Aakarsh_Pateriya_CV.pdf'; // Name that will appear when downloading
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
-    return (
-        <div className="cv-container" data-aos="fade-up">
-            <header className="cv-header" data-aos="fade-down">
-                <h1 className="cv-name">Aakarsh Pateriya</h1>
-                <p className="cv-title">Full Stack Developer</p>
-                <p className="cv-contact">Email: aakarshpateriya123@gmail.com | Phone: +91 9993748220 | LinkedIn: <a href="https://www.linkedin.com/in/aakarsh-pateriya-a0b784252" target="_blank">linkedin.com/in/aakarsh-pateriya</a> | GitHub: <a href="https://github.com/aakarshpateriya" target="_blank">github.com/aakarshpateriya</a></p>
-                <button onClick={handleDownloadCV} className="cv-download-button">Download CV</button>
-            </header>
-
-            <section className="cv-section" data-aos="fade-right">
-                <h2 className="cv-section-title">Summary</h2>
-                <p className="cv-section-content">Entrepreneur and full-stack developer with experience in leading projects, building startups, and organizing events. Co-founder and CEO of Bootstrap, connecting students with top coders for hackathons, and founder of Nations Sports and Education Pvt Ltd (NSE), offering sports and educational services. Skilled in full-stack development, project management, public speaking, and event coordination. Passionate about fostering education, sports, and innovation in the community.</p>
-            </section>
-
-            <section className="cv-section" data-aos="fade-left">
-                <h2 className="cv-section-title">Technical Skills</h2>
-                <ul className="cv-list">
-                    <li>Backend Development: Node.js, Java, PHP</li>
-                    <li>Frontend Development: React.js, MERN Stack</li>
-                    <li>Android App Development</li>
-                    <li>Database Management: DBMS</li>
-                    <li>Languages: Java, C, C++, Python</li>
-                    <li>Generative AI, DSA</li>
-                </ul>
-            </section>
-
-            <section className="cv-section" data-aos="fade-right">
-                <h2 className="cv-section-title">Projects</h2>
-                <ul className="cv-list">
-                    <li data-aos="zoom-in">
-                        <strong>Nations Education and Sports Application</strong> (Aug 2022 - Oct 2022)
-                        <p>Developed an app for NFC to manage registrations and events. Built with React for front-end and Node.js for backend, allowing real-time data updates.</p>
-                        <a href="https://nfcsportsandeducations.netlify.app/" className="cv-button" target="_blank">View Project</a>
-                    </li>
-                    <li data-aos="zoom-in">
-                        <strong>Noise Pollution-Based Random Code Generator</strong> (Feb 2023 - April 2023)
-                        <p>Created an OTP generator using noise pollution data for unique authentication codes.</p>
-                        <a href="https://github.com/aakarshpateriya/Random-code-Generator" className="cv-button" target="_blank">View Project</a>
-                    </li>
-                    <li data-aos="zoom-in">
-                        <strong>NSC Quiz Platform</strong> (March 2024 - April 2024)
-                        <p>Developed an interactive quiz platform with real-time score tracking using React.js.</p>
-                        <a href="https://github.com/aakarshpateriya/NFCEducationOnReactjs" className="cv-button" target="_blank">View Project</a>
-                    </li>
-                </ul>
-            </section>
-
-            <section className="cv-section" data-aos="fade-left">
-                <h2 className="cv-section-title">Education</h2>
-                <ul className="cv-list">
-                    <li data-aos="fade-up">
-                        <strong>Bachelor of Technology in Computer Science</strong>
-                        <p>Lovely Professional University, Punjab | 2021 - 2025</p>
-                    </li>
-                    <li data-aos="fade-up">
-                        <strong>12th MP Board</strong>
-                        <p>GOVT Model H S School, Nowgong, Chhatarpur | Feb - March 2022</p>
-                    </li>
-                    <li data-aos="fade-up">
-                        <strong>10th CBSE</strong>
-                        <p>GCM Convent School Nowgong, Chhatarpur | Aug 2019 - July 2020</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section className="cv-section" data-aos="fade-up">
-                <h2 className="cv-section-title">Additional Information</h2>
-                <ul className="cv-list">
-                    <li>Languages: English, Hindi</li>
-                    <li>Certifications: Object Oriented Programming, Generative AI</li>
-                    <li>Awards/Activities: Universu MM 2023 National Youth Festival Standup Comedy</li>
-                </ul>
-            </section>
-
-            <footer className="cv-footer" data-aos="fade-up">
-                <p>© 2025 Aakarsh Pateriya. All rights reserved.</p>
-            </footer>
+  return (
+    <> 
+    <Navbar/>
+    <Intro/>
+    
+    {/* Skills Section */}
+    <section id="skills" className="skills-section">
+      <h2 className="section-title">Skills</h2>
+      <div className="skills-container">
+        <div className="skill-category">
+          <h3>Frontend</h3>
+          <div className="skills-list">
+            <span className="skill-tag">React.js</span>
+            <span className="skill-tag">JavaScript</span>
+            <span className="skill-tag">HTML5</span>
+            <span className="skill-tag">CSS3</span>
+            <span className="skill-tag">Bootstrap</span>
+            <span className="skill-tag">Tailwind CSS</span>
+          </div>
         </div>
-    );
+        <div className="skill-category">
+          <h3>Backend</h3>
+          <div className="skills-list">
+            <span className="skill-tag">Node.js</span>
+            <span className="skill-tag">Express.js</span>
+            <span className="skill-tag">MongoDB</span>
+            <span className="skill-tag">SQL</span>
+            <span className="skill-tag">RESTful APIs</span>
+          </div>
+        </div>
+        <div className="skill-category">
+          <h3>Tools & Others</h3>
+          <div className="skills-list">
+            <span className="skill-tag">Git</span>
+            <span className="skill-tag">GitHub</span>
+            <span className="skill-tag">VS Code</span>
+            <span className="skill-tag">Postman</span>
+            <span className="skill-tag">Docker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Projects/>
+
+    {/* CV Download Button */}
+    <div className="cv-download-container" style={{ textAlign: 'center', margin: '2rem 0' }}>
+      <button 
+        onClick={handleDownloadCV}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: '#4CAF50',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          fontSize: '16px',
+          cursor: 'pointer',
+          transition: 'background-color 0.3s'
+        }}
+        onMouseOver={(e) => e.target.style.backgroundColor = '#45a049'}
+        onMouseOut={(e) => e.target.style.backgroundColor = '#4CAF50'}
+      >
+        Download CV
+      </button>
+    </div>
+
+    <Certifications/>
+
+    {/* Contact Section */}
+    <section id="contact" className="contact-section">
+      <h2 className="section-title">Get in Touch</h2>
+      <div className="contact-container">
+        <div className="contact-info">
+          <h3>Contact Information</h3>
+          <p>Email: your.email@example.com</p>
+          <p>Phone: +91 XXXXXXXXXX</p>
+          <p>Location: Your City, Country</p>
+        </div>
+        <form className="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <Footer/>
+    </>
+  )
 }
 
-export default Cv;
+export default App

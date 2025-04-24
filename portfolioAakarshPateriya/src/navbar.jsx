@@ -1,44 +1,26 @@
-import React from "react";
-import './intro.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-function Navbar(){
-
-    return(
-        <>
-        
-        <div class="nav">
-  <div class="container">
-
-    <div class="btn">Home</div>
-    <div class="btn">CV</div>
-    <div class="btn">About</div>
-    <div class="btn">FAQ</div>
-
-    <svg
-      class="outline"
-      overflow="visible"
-      width="400"
-      height="60"
-      viewBox="0 0 400 60"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        class="rect"
-        pathLength="100"
-        x="0"
-        y="0"
-        width="400"
-        height="60"
-        fill="transparent"
-        stroke-width="5"
-      ></rect>
-    </svg>
-  </div>
-</div>
-
-        
-        </>
-    )
-}
+const Navbar = () => {
+    return (
+        <nav className="navbar">
+            <div className="navbar-container">
+                <Link to="/" className="navbar-logo">
+                    Aakarsh Pateriya
+                </Link>
+                <div className="navbar-links">
+                    <Link to="/" className="navbar-link">Home</Link>
+                    <Link to="/skills" className="navbar-link">Skills</Link>
+                    <Link to="/certifications" className="navbar-link">Certifications</Link>
+                    <Link to="/contact" className="navbar-link">Contact</Link>
+                </div>
+                <button className="navbar-menu-button">
+                    <span>☰</span>
+                </button>
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;
