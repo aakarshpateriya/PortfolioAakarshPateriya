@@ -58,7 +58,6 @@ const Education = () => {
             textAlign: 'center', 
             marginBottom: '4rem', 
             color: '#2d3436',
-
             fontSize: '2.5rem',
             fontWeight: '700',
             position: 'relative',
@@ -82,7 +81,6 @@ const Education = () => {
           display: 'flex', 
           flexWrap: 'wrap',
           justifyContent: 'center',
-
           gap: '30px',
           margin: '0 auto'
         }}>
@@ -94,13 +92,8 @@ const Education = () => {
               data-aos-delay={index * 100}
               style={{
                 backgroundColor: 'white',
-
                 borderRadius: '15px',
                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-
-
-
-
                 padding: '30px',
                 width: 'calc(33.333% - 30px)',
                 maxWidth: '350px',
@@ -124,15 +117,11 @@ const Education = () => {
               <div style={{
                 background: 'linear-gradient(135deg, #4CAF50, #81C784)',
                 color: 'white',
-
-
-
                 padding: '8px 16px',
                 borderRadius: '20px',
                 fontSize: '14px',
                 fontWeight: '600',
                 alignSelf: 'flex-start',
-
                 marginBottom: '20px',
                 boxShadow: '0 5px 15px rgba(76, 175, 80, 0.2)'
               }}>
@@ -141,8 +130,6 @@ const Education = () => {
               
               <h3 style={{ 
                 color: '#2d3436', 
-
-
                 marginBottom: '15px',
                 fontSize: '1.4rem',
                 fontWeight: '700'
@@ -150,8 +137,6 @@ const Education = () => {
               
               <h4 style={{ 
                 color: '#636e72', 
-
-
                 marginBottom: '15px',
                 fontSize: '1.1rem',
                 fontWeight: '600'
@@ -160,12 +145,9 @@ const Education = () => {
               {item.description && (
                 <p style={{ 
                   color: '#636e72', 
-
-
                   marginBottom: '15px',
                   lineHeight: '1.6',
                   flex: '1',
-
                   fontSize: '1rem'
                 }}>{item.description}</p>
               )}
@@ -173,10 +155,8 @@ const Education = () => {
               <p style={{ 
                 fontWeight: '700', 
                 color: '#4CAF50',
-
                 fontSize: '1.1rem',
                 marginTop: 'auto',
-
                 padding: '12px 0',
                 borderTop: '2px dashed #e8f5e9'
               }}>{item.grade}</p>
