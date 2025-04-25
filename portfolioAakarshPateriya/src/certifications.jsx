@@ -1,6 +1,8 @@
 import React from 'react';
 import './certifications.css';
-
+// Import your local images
+import reactCert from './assets/images/Screenshot 2025-02-20 224819.png';
+import nodeCert from './assets/images/Screenshot 2025-02-20 225133.png';
 
 const Certifications = () => {
   const certifications = [
@@ -15,14 +17,14 @@ const Certifications = () => {
       title: "React.js Certification",
       issuer: "Udemy",
       date: "2023",
-      image: require("/Screenshot 2025-02-20 224819.png"),
+      image: reactCert, // Use the imported image
       link: "#"
     },
     {
       title: "Node.js Certification",
       issuer: "Coursera",
       date: "2023",
-      image: "/Screenshot 2025-02-20 225133.png",
+      image: nodeCert, // Use the imported image
       link: "#"
     }
   ];
@@ -50,4 +52,5 @@ const Certifications = () => {
     </section>
   );
 };
+
 export default Certifications;

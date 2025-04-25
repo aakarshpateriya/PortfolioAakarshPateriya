@@ -2,6 +2,7 @@ import React from 'react';
 import Intro from '../Intro.jsx';
 import PlatformOverview from '../PlatformOverview.jsx';
 import Projects from '../projectCard.jsx';
+import Education from '../Education.jsx';
 import SocialLink from '../socialLink.jsx';
 import '../App.css';
 
@@ -24,7 +25,13 @@ const Home = () => {
             <Intro />
             <PlatformOverview />
             <Projects />
-            <SocialLink />
+            <br />
+            <br />
+            <br />
+            <Education />
+            <br />
+            <br />
+            <br />
             
             {/* CV Download Button */}
             <div className="cv-download-container" style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -46,8 +53,9 @@ const Home = () => {
                     Download CV
                 </button>
             </div>
+            <SocialLink />
         </div>
     );
 };
 
-export default Home; 
+export default Home;
