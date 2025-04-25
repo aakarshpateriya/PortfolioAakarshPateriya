@@ -22,7 +22,7 @@ const Footer = () => {
                         <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-twitter"></i>
                         </a>
-                        <a href="mailto:your.email@example.com">
+                        <a href="aakarshpateriya123@gmail.com">
                             <i className="fas fa-envelope"></i>
                         </a>
                     </div>

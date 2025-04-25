@@ -101,7 +101,8 @@ function App() {
           <h3>Contact Information</h3>
           <p>Email: aakarshpateriya123@gmail.com</p>
           <p>Phone: +91 9993748220</p>
-          <p>Location: Chhattarpur, India</p>
+          <p>Location: Chhattarpur, India</p> 
+          
         </div>
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required />
