@@ -27,6 +27,7 @@ const Intro = () => {
                     </h2>
                     <p className="intro-description">
                         I create beautiful, functional, and user-friendly web applications.
+                        Working in Mello Cooperation as a Full Stack Developer.
                         Passionate about building innovative solutions and delivering exceptional user experiences.
                     </p>
                     <div className="intro-buttons">

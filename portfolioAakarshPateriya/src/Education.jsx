@@ -58,7 +58,8 @@ const Education = () => {
             textAlign: 'center', 
             marginBottom: '4rem', 
             color: '#2d3436',
-            fontSize: '3rem',
+
+            fontSize: '2.5rem',
             fontWeight: '700',
             position: 'relative',
             paddingBottom: '20px'
@@ -81,7 +82,8 @@ const Education = () => {
           display: 'flex', 
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '40px',
+
+          gap: '30px',
           margin: '0 auto'
         }}>
           {educationData.map((item, index) => (
@@ -92,12 +94,17 @@ const Education = () => {
               data-aos-delay={index * 100}
               style={{
                 backgroundColor: 'white',
-                borderRadius: '20px',
+
+                borderRadius: '15px',
                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-                padding: '40px',
-                width: 'calc(33.333% - 40px)',
-                maxWidth: '380px',
-                minWidth: '280px',
+
+
+
+
+                padding: '30px',
+                width: 'calc(33.333% - 30px)',
+                maxWidth: '350px',
+                minWidth: '250px',
                 transition: 'all 0.4s ease',
                 display: 'flex',
                 flexDirection: 'column',
@@ -117,12 +124,16 @@ const Education = () => {
               <div style={{
                 background: 'linear-gradient(135deg, #4CAF50, #81C784)',
                 color: 'white',
-                padding: '10px 20px',
-                borderRadius: '25px',
-                fontSize: '15px',
+
+
+
+                padding: '8px 16px',
+                borderRadius: '20px',
+                fontSize: '14px',
                 fontWeight: '600',
                 alignSelf: 'flex-start',
-                marginBottom: '25px',
+
+                marginBottom: '20px',
                 boxShadow: '0 5px 15px rgba(76, 175, 80, 0.2)'
               }}>
                 {item.year}
@@ -130,34 +141,43 @@ const Education = () => {
               
               <h3 style={{ 
                 color: '#2d3436', 
-                marginBottom: '20px',
-                fontSize: '1.7rem',
+
+
+                marginBottom: '15px',
+                fontSize: '1.4rem',
                 fontWeight: '700'
               }}>{item.degree}</h3>
               
               <h4 style={{ 
                 color: '#636e72', 
-                marginBottom: '20px',
-                fontSize: '1.2rem',
+
+
+                marginBottom: '15px',
+                fontSize: '1.1rem',
                 fontWeight: '600'
               }}>{item.institution}</h4>
               
               {item.description && (
                 <p style={{ 
                   color: '#636e72', 
-                  marginBottom: '20px',
-                  lineHeight: '1.8',
+
+
+                  marginBottom: '15px',
+                  lineHeight: '1.6',
                   flex: '1',
-                  fontSize: '1.1rem'
+
+                  fontSize: '1rem'
                 }}>{item.description}</p>
               )}
               
               <p style={{ 
                 fontWeight: '700', 
                 color: '#4CAF50',
-                fontSize: '1.2rem',
+
+                fontSize: '1.1rem',
                 marginTop: 'auto',
-                padding: '15px 0',
+
+                padding: '12px 0',
                 borderTop: '2px dashed #e8f5e9'
               }}>{item.grade}</p>
             </div>
