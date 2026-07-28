@@ -19,7 +19,7 @@ const Education = () => {
       institution: "Lovely Professional University",
       year: "2022 - Present",
       description: "Computer Science and Engineering",
-      grade: "CGPA: 7.2"
+      grade: "CGPA: 7.6"
     },
     {
       id: 2,

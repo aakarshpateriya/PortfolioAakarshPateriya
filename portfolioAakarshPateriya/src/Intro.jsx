@@ -23,7 +23,7 @@ const Intro = () => {
                         Hi, I'm <span className="highlight">Aakarsh Pateriya</span>
                     </h1>
                     <h2 className="intro-subtitle">
-                        Full Stack Developer
+                        SSE @grey<span style={{ color: 'orange' }}>Orange</span> | Full Stack Developer | MERN Stack Enthusiast
                     </h2>
                     <p className="intro-description">
                         I create beautiful, functional, and user-friendly web applications.
@@ -40,15 +40,15 @@ const Intro = () => {
                     </div>
                     <div className="intro-stats">
                         <div className="stat-item">
-                            <span className="stat-number">2+</span>
+                            <span className="stat-number">1+</span>
                             <span className="stat-label">Years Experience</span>
                         </div>
                         <div className="stat-item">
-                            <span className="stat-number">20+</span>
+                            <span className="stat-number">15+</span>
                             <span className="stat-label">Projects Completed</span>
                         </div>
                         <div className="stat-item">
-                            <span className="stat-number">10+</span>
+                            <span className="stat-number">5+</span>
                             <span className="stat-label">Happy Clients</span>
                         </div>
                     </div>

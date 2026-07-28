@@ -43,15 +43,15 @@ const PlatformOverview = () => {
 
         // Mock data - Replace with actual API calls
         setGithubStats({
-            repos: 15,
-            followers: 50,
+            repos: 29,
+            followers: 4,
             contributions: 200
         });
 
         setLeetcodeStats({
-            problemsSolved: 150,
-            ranking: 5000,
-            contests: 10
+            problemsSolved: 54,
+            ranking: 50000,
+            contests: 5
         });
 
         return () => {
