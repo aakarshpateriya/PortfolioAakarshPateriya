@@ -23,7 +23,7 @@ const Intro = () => {
                         Hi, I'm <span className="highlight">Aakarsh Pateriya</span>
                     </h1>
                     <h2 className="intro-subtitle">
-                        SSE @grey<span style={{ color: 'orange' }}>Orange</span> | Full Stack Developer | MERN Stack Enthusiast
+                        SEA @grey<span style={{ color: 'orange' }}>Orange</span> | Software Engineer | Automtion Developer
                     </h2>
                     <p className="intro-description">
                         I create beautiful, functional, and user-friendly web applications.
