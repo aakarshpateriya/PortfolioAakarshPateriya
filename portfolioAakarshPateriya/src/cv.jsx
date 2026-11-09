@@ -14,7 +14,7 @@ function App() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Path to your CV file in the public directory
-    const cvUrl = '/Aakarsh_Pateriya_CV.pdf';
+    const cvUrl = '/src/assets/CV/Automatio_CV _Aakarsh.pdf';
     
     // Create an anchor element
     const link = document.createElement('a');

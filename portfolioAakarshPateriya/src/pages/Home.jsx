@@ -5,16 +5,13 @@ import Projects from '../projectCard.jsx';
 import Education from '../Education.jsx';
 import SocialLink from '../socialLink.jsx';
 import '../App.css';
+import cvPdf from '../assets/CV/Aakarsh_Pateriya_CV.pdf';
 
 const Home = () => {
     const handleDownloadCV = () => {
-        // Path to your CV file in the public directory
-        const cvUrl = '/Aakarsh_Pateriya_CV.pdf';
-        
-        // Create an anchor element
         const link = document.createElement('a');
-        link.href = cvUrl;
-        link.download = 'Aakarsh_Pateriya_CV.pdf'; // Name that will appear when downloading
+        link.href = cvPdf;
+        link.download = 'Aakarsh_Pateriya_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
