@@ -5,7 +5,7 @@ import Projects from '../projectCard.jsx';
 import Education from '../Education.jsx';
 import SocialLink from '../socialLink.jsx';
 import '../App.css';
-import cvPdf from '../assets/CV/Aakarsh_Pateriya_CV.pdf';
+import cvPdf from '../assets/CV/Automatio_CV _Aakarsh.pdf';
 
 const Home = () => {
     const handleDownloadCV = () => {
